@@ -1,15 +1,12 @@
 
 // commond --rafce
-import React, { useEffect, useState} from 'react'
-
-import "./User.css"
-import axios from "axios"
+import React, { useEffect, useState} from 'react';
+import "./User.css";
+import axios from "axios";
 
 const User = () => {
 
-
-
-  const [users, setUsers]= useState([])
+  const [users, setUsers]= useState([]);
   useEffect(()=> {
     const fetchData = async()=>{
       try{
