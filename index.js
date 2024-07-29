@@ -9,6 +9,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 dotenv.config();
+
+// connection db
 const PORT = process.env.PORT;
 const MONGOURL = process.env.MONGO_URL;
 mongoose.connect(MONGOURL).then(()=>
